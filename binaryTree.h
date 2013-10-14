@@ -22,7 +22,6 @@ public:
     Tree (const Tree &); // конструктор копирования
     Tree &operator=(const Tree&);
     Tree operator+(const Tree&);
-    void operator+=(const Tree&);
     Tree operator*(const Tree &);
     Tree operator-(const Tree &);
 

@@ -78,11 +78,6 @@ Tree Tree::operator-(const Tree &original)
         return *this;
 }
 
-/*void Tree::operator+=(const Tree &original)
-{
-    *this = *this + original;
-}
-*/
 
 /////////////////////////////////////////////////////
 
