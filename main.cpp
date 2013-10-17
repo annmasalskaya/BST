@@ -26,6 +26,10 @@ int main()
     cout<<endl;
     tree2.outputTree(0);
     cout<<endl;
+    cout<<"Объединение деревьев 1 и 2:"<<endl;
+    cout<<"___________________________"<<endl;
+    (tree1+tree2).outputTree(0);
+    cout<<endl<<endl;
     cout<<"Объединение деревьев 2 и 1:"<<endl;
     cout<<"___________________________"<<endl;
     (tree2+tree1).outputTree(0);
