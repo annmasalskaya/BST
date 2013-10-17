@@ -159,15 +159,14 @@ void Tree::copyTreeNode(TreeNode *&newTreeNode, TreeNode *original)
 
 void Tree::uniteTrees(TreeNode *other, TreeNode *result)
 {
-    if(other->left)
+   if( other)
     {
-        uniteTrees(other->left, result);
         insertNode(result,other->data);
-    }
-    else if(other->right)
-    {
-        uniteTrees(other->right,result);
-        insertNode(result,other->data);
+        if(other->right)
+            uniteTrees(other->right,result);
+        if(other->left)
+            uniteTrees(other->left, result);
+
     }
 }
 
